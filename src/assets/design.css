@@ -1,0 +1,25 @@
+#card_holder {
+  flex-flow: row wrap;
+}
+@media (min-width: 640px) {
+  #card:nth-child(3n) {
+    break-after: always;
+  }
+  #card {
+    width: 33%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  #card:nth-child(3n) {
+    break-after: avoid;
+  }
+  #card {
+    width: 50%;
+    height: 350px;
+  }
+  #card:nth-child(2n) {
+    break-after: always;
+  }
+}

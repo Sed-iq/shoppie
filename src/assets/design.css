@@ -1,13 +1,16 @@
 #card_holder {
   flex-flow: row wrap;
 }
+#card {
+  margin: 1em 0em;
+}
 @media (min-width: 640px) {
   #card:nth-child(3n) {
     break-after: always;
   }
   #card {
     width: 33%;
-    height: 400px;
+    height: 500px;
   }
 }
 
